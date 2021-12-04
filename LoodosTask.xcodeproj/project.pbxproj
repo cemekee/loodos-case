@@ -13,9 +13,17 @@
 		182069F8275A509200000833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182069F6275A509200000833 /* Main.storyboard */; };
 		182069FA275A509600000833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182069F9275A509600000833 /* Assets.xcassets */; };
 		182069FD275A509600000833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182069FB275A509600000833 /* LaunchScreen.storyboard */; };
+		18206A09275A555300000833 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18206A08275A555300000833 /* SplashVC.swift */; };
+		18206A0D275A593300000833 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18206A0C275A593300000833 /* Splash.storyboard */; };
+		18206A12275A799400000833 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18206A11275A799400000833 /* Movie.swift */; };
+		18206A14275A7B7600000833 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18206A13275A7B7600000833 /* MainVM.swift */; };
+		18206A16275A7EB800000833 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18206A15275A7EB800000833 /* NetworkManager.swift */; };
+		18E8210B275B5AFF0032A406 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8210A275B5AFF0032A406 /* DetailVC.swift */; };
+		60C0218CF2908D8E64A0928E /* Pods_LoodosTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DF216F6BE63F27C4BC5351 /* Pods_LoodosTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17DF216F6BE63F27C4BC5351 /* Pods_LoodosTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoodosTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		182069ED275A509200000833 /* LoodosTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182069F0275A509200000833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		182069F2275A509200000833 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,14 @@
 		182069F9275A509600000833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182069FC275A509600000833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182069FE275A509600000833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18206A08275A555300000833 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		18206A0C275A593300000833 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		18206A11275A799400000833 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		18206A13275A7B7600000833 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		18206A15275A7EB800000833 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		18E8210A275B5AFF0032A406 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		4605A70EDF367CB7D1B4BF3F /* Pods-LoodosTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosTask.debug.xcconfig"; path = "Target Support Files/Pods-LoodosTask/Pods-LoodosTask.debug.xcconfig"; sourceTree = "<group>"; };
+		BD3FAC1EF78148FD77EF1144 /* Pods-LoodosTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosTask.release.xcconfig"; path = "Target Support Files/Pods-LoodosTask/Pods-LoodosTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C0218CF2908D8E64A0928E /* Pods_LoodosTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				182069EF275A509200000833 /* LoodosTask */,
 				182069EE275A509200000833 /* Products */,
+				7A5B2676A011354CD8015EA1 /* Pods */,
+				69B04597C04E5A8986402053 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,78 @@
 		182069EF275A509200000833 /* LoodosTask */ = {
 			isa = PBXGroup;
 			children = (
+				18206A10275A773D00000833 /* Network */,
+				18206A04275A525C00000833 /* Model */,
+				18206A05275A526200000833 /* ViewModel */,
+				18206A06275A527200000833 /* Controller */,
+				18206A07275A528100000833 /* View */,
 				182069F0275A509200000833 /* AppDelegate.swift */,
 				182069F2275A509200000833 /* SceneDelegate.swift */,
-				182069F4275A509200000833 /* ViewController.swift */,
-				182069F6275A509200000833 /* Main.storyboard */,
 				182069F9275A509600000833 /* Assets.xcassets */,
 				182069FB275A509600000833 /* LaunchScreen.storyboard */,
 				182069FE275A509600000833 /* Info.plist */,
 			);
 			path = LoodosTask;
+			sourceTree = "<group>";
+		};
+		18206A04275A525C00000833 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18206A11275A799400000833 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18206A05275A526200000833 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18206A13275A7B7600000833 /* MainVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18206A06275A527200000833 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182069F4275A509200000833 /* ViewController.swift */,
+				18E8210A275B5AFF0032A406 /* DetailVC.swift */,
+				18206A08275A555300000833 /* SplashVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18206A07275A528100000833 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				182069F6275A509200000833 /* Main.storyboard */,
+				18206A0C275A593300000833 /* Splash.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18206A10275A773D00000833 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				18206A15275A7EB800000833 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		69B04597C04E5A8986402053 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17DF216F6BE63F27C4BC5351 /* Pods_LoodosTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A5B2676A011354CD8015EA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4605A70EDF367CB7D1B4BF3F /* Pods-LoodosTask.debug.xcconfig */,
+				BD3FAC1EF78148FD77EF1144 /* Pods-LoodosTask.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18206A01275A509600000833 /* Build configuration list for PBXNativeTarget "LoodosTask" */;
 			buildPhases = (
+				423C161A9EDE614CD14C61CD /* [CP] Check Pods Manifest.lock */,
 				182069E9275A509200000833 /* Sources */,
 				182069EA275A509200000833 /* Frameworks */,
 				182069EB275A509200000833 /* Resources */,
+				A3D7D504D72AE0DFF636D5DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +212,53 @@
 				182069FD275A509600000833 /* LaunchScreen.storyboard in Resources */,
 				182069FA275A509600000833 /* Assets.xcassets in Resources */,
 				182069F8275A509200000833 /* Main.storyboard in Resources */,
+				18206A0D275A593300000833 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		423C161A9EDE614CD14C61CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoodosTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D7D504D72AE0DFF636D5DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoodosTask/Pods-LoodosTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoodosTask/Pods-LoodosTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoodosTask/Pods-LoodosTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		182069E9275A509200000833 /* Sources */ = {
@@ -139,6 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				182069F5275A509200000833 /* ViewController.swift in Sources */,
+				18206A14275A7B7600000833 /* MainVM.swift in Sources */,
+				18206A12275A799400000833 /* Movie.swift in Sources */,
+				18206A16275A7EB800000833 /* NetworkManager.swift in Sources */,
+				18206A09275A555300000833 /* SplashVC.swift in Sources */,
+				18E8210B275B5AFF0032A406 /* DetailVC.swift in Sources */,
 				182069F1275A509200000833 /* AppDelegate.swift in Sources */,
 				182069F3275A509200000833 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +416,7 @@
 		};
 		18206A02275A509600000833 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4605A70EDF367CB7D1B4BF3F /* Pods-LoodosTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +445,7 @@
 		};
 		18206A03275A509600000833 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD3FAC1EF78148FD77EF1144 /* Pods-LoodosTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
