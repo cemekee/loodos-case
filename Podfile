@@ -8,6 +8,6 @@ target 'LoodosTask' do
   # Pods for LoodosTask
 pod 'Alamofire', '~> 5.4'
 pod 'SwiftyJSON', '~> 4.0'
-pod 'Kingfisher'
+pod 'Kingfisher', '~> 7.1' 
 
 end
