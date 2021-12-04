@@ -61,12 +61,13 @@ extension DetailVC {
                 poster: poster )
 
           // 3
-            let movieItemRef = self.ref.child(movieItem.title.lowercased())
+        let movieTitle = movieItem.title.replacingOccurrences(of: ".", with: ",")
+        let movieItemRef = self.ref.child(movieTitle.lowercased())
            
           // 4
             movieItemRef.setValue(movieItem.title)
     }
-        
-    }
+
+}
 
 
