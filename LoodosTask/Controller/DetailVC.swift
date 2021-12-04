@@ -21,12 +21,13 @@ class DetailVC: UIViewController {
     var refObservers: [DatabaseHandle] = []
     
     var movieDetail: Movie?
+    private let viewModel = DetailVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        addItemToFirebaseDB()
-        updateFirebaseAnalystics()
+        viewModel.addItemToFirebaseDB(mv: movieDetail)
+        viewModel.updateFirebaseAnalystics(mv: movieDetail)
     }
     
 }
@@ -42,42 +43,8 @@ extension DetailVC {
         
     }
     
-    func addItemToFirebaseDB() {
-       
-          // 1
-          guard
-            let title = self.movieDetail?.title,
-            let rated = self.movieDetail?.rated,
-            let year = self.movieDetail?.year,
-            let released = self.movieDetail?.released,
-            let poster = self.movieDetail?.poster
-          else { return }
-          
-          // 2
-            let movieItem = Movie(
-                title: title,
-                year: year,
-                rated: rated,
-                released: released,
-                poster: poster )
-
-          // 3
-        let movieTitle = movieItem.title.replacingOccurrences(of: ".", with: ",")
-        let movieItemRef = self.ref.child(movieTitle.lowercased())
-           
-          // 4
-            movieItemRef.setValue(movieItem.title)
-        
-        
-    }
     
-    func updateFirebaseAnalystics() {
-          Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
-            AnalyticsParameterItemID: "id-\(self.movieDetail?.title)",
-            AnalyticsParameterItemName: self.movieDetail?.title
-        ])
-        
-    }
+    
 
 }
 
