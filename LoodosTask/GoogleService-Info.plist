@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1051593642941-oerqvkkhmv25kkkfac8ftlkorvr26qk5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1051593642941-oerqvkkhmv25kkkfac8ftlkorvr26qk5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyArzpTSI3hOGyKzP-froUVGcBLRX4exsqc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1051593642941</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>none.LoodosTask</string>
+	<key>PROJECT_ID</key>
+	<string>loodostask-af0f8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>loodostask-af0f8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1051593642941:ios:522499b5a004431ece38d4</string>
+	<key>DATABASE_URL</key>
+	<string>https://loodostask-af0f8-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
