@@ -31,6 +31,7 @@
 		18E82120275B746B0032A406 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 18E8211F275B746B0032A406 /* FirebaseRemoteConfig */; };
 		18E82122275B746B0032A406 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 18E82121275B746B0032A406 /* FirebaseStorage */; };
 		18E82124275B768C0032A406 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82123275B768C0032A406 /* MovieListTableViewController.swift */; };
+		18E82126275B8DA70032A406 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18E82125275B8DA70032A406 /* GoogleService-Info-2.plist */; };
 		60C0218CF2908D8E64A0928E /* Pods_LoodosTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DF216F6BE63F27C4BC5351 /* Pods_LoodosTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		18E8210A275B5AFF0032A406 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		18E8210C275B72110032A406 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18E82123275B768C0032A406 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		18E82125275B8DA70032A406 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-2.plist"; path = "../../../Downloads/GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		4605A70EDF367CB7D1B4BF3F /* Pods-LoodosTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosTask.debug.xcconfig"; path = "Target Support Files/Pods-LoodosTask/Pods-LoodosTask.debug.xcconfig"; sourceTree = "<group>"; };
 		BD3FAC1EF78148FD77EF1144 /* Pods-LoodosTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosTask.release.xcconfig"; path = "Target Support Files/Pods-LoodosTask/Pods-LoodosTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				182069F9275A509600000833 /* Assets.xcassets */,
 				182069FB275A509600000833 /* LaunchScreen.storyboard */,
 				18E8210C275B72110032A406 /* GoogleService-Info.plist */,
+				18E82125275B8DA70032A406 /* GoogleService-Info-2.plist */,
 				182069FE275A509600000833 /* Info.plist */,
 			);
 			path = LoodosTask;
@@ -252,6 +255,7 @@
 			files = (
 				182069FD275A509600000833 /* LaunchScreen.storyboard in Resources */,
 				182069FA275A509600000833 /* Assets.xcassets in Resources */,
+				18E82126275B8DA70032A406 /* GoogleService-Info-2.plist in Resources */,
 				18E8210D275B72110032A406 /* GoogleService-Info.plist in Resources */,
 				182069F8275A509200000833 /* Main.storyboard in Resources */,
 				18206A0D275A593300000833 /* Splash.storyboard in Resources */,

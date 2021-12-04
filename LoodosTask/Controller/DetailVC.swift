@@ -26,6 +26,7 @@ class DetailVC: UIViewController {
         super.viewDidLoad()
         setupUI()
         addItemToFirebaseDB()
+        updateFirebaseAnalystics()
     }
     
 }
@@ -66,6 +67,16 @@ extension DetailVC {
            
           // 4
             movieItemRef.setValue(movieItem.title)
+        
+        
+    }
+    
+    func updateFirebaseAnalystics() {
+          Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+            AnalyticsParameterItemID: "id-\(self.movieDetail?.title)",
+            AnalyticsParameterItemName: self.movieDetail?.title
+        ])
+        
     }
 
 }
