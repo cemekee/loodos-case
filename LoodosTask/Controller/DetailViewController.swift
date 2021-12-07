@@ -21,7 +21,7 @@ class DetailVC: UIViewController {
     var refObservers: [DatabaseHandle] = []
     
     var movieDetail: Movie?
-    private let viewModel = DetailVM()
+    let viewModel = DetailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,23 +29,6 @@ class DetailVC: UIViewController {
         viewModel.addItemToFirebaseDB(mv: movieDetail)
         viewModel.updateFirebaseAnalystics(mv: movieDetail)
     }
-    
-}
-
-extension DetailVC {
-    func setupUI(){
-        
-        imageView.kf.setImage(with: URL(string: movieDetail?.poster ?? ""))
-        lblTitle.text = "Title : " + "\(movieDetail?.title ?? "")"
-        lblRated.text = "Rated : " + "\(movieDetail?.rated ?? "")"
-        lblYear.text = "Year : " + "\(movieDetail?.year ?? "")"
-        lblReleased.text = "Released : " + "\(movieDetail?.released ?? "")"
-        
-    }
-    
-    
-    
-
 }
 
 

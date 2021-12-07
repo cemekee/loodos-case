@@ -13,11 +13,10 @@
 		182069F8275A509200000833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182069F6275A509200000833 /* Main.storyboard */; };
 		182069FA275A509600000833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182069F9275A509600000833 /* Assets.xcassets */; };
 		182069FD275A509600000833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182069FB275A509600000833 /* LaunchScreen.storyboard */; };
-		18206A0D275A593300000833 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18206A0C275A593300000833 /* Splash.storyboard */; };
 		18206A12275A799400000833 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18206A11275A799400000833 /* Movie.swift */; };
-		18206A14275A7B7600000833 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18206A13275A7B7600000833 /* MainVM.swift */; };
+		18206A14275A7B7600000833 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18206A13275A7B7600000833 /* MainViewModel.swift */; };
 		18206A16275A7EB800000833 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18206A15275A7EB800000833 /* NetworkManager.swift */; };
-		18E8210B275B5AFF0032A406 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8210A275B5AFF0032A406 /* DetailVC.swift */; };
+		18E8210B275B5AFF0032A406 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8210A275B5AFF0032A406 /* DetailViewController.swift */; };
 		18E82110275B746B0032A406 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 18E8210F275B746B0032A406 /* FirebaseAnalytics */; };
 		18E82112275B746B0032A406 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 18E82111275B746B0032A406 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		18E82114275B746B0032A406 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 18E82113275B746B0032A406 /* FirebaseAppCheck */; };
@@ -28,8 +27,19 @@
 		18E8211E275B746B0032A406 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 18E8211D275B746B0032A406 /* FirebaseMessaging */; };
 		18E82120275B746B0032A406 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 18E8211F275B746B0032A406 /* FirebaseRemoteConfig */; };
 		18E82122275B746B0032A406 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 18E82121275B746B0032A406 /* FirebaseStorage */; };
-		18E82128275B95DA0032A406 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82127275B95DA0032A406 /* DetailVM.swift */; };
+		18E82128275B95DA0032A406 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82127275B95DA0032A406 /* DetailViewModel.swift */; };
 		18E8212A275BE2140032A406 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18E82129275BE2140032A406 /* GoogleService-Info.plist */; };
+		18E8212C275BF4240032A406 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8212B275BF4240032A406 /* Response.swift */; };
+		18E8212F275E08CA0032A406 /* NetworkManager+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8212E275E08CA0032A406 /* NetworkManager+JSON.swift */; };
+		18E82134275E12AB0032A406 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82133275E12AB0032A406 /* List.swift */; };
+		18E82138275E34EA0032A406 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82137275E34EA0032A406 /* Connectivity.swift */; };
+		18E8213A275E3E8A0032A406 /* RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82139275E3E8A0032A406 /* RCValues.swift */; };
+		18E8213E275E69FF0032A406 /* ViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8213D275E69FF0032A406 /* ViewController+Delegate.swift */; };
+		18E82140275E6E4C0032A406 /* ViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8213F275E6E4C0032A406 /* ViewController+TableViewDataSource.swift */; };
+		18E82142275E73100032A406 /* DetailViewController+SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82141275E73100032A406 /* DetailViewController+SetupUI.swift */; };
+		18E82144275E73300032A406 /* ViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82143275E73300032A406 /* ViewController+TableViewDelegate.swift */; };
+		18E82146275E74090032A406 /* ViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82145275E74090032A406 /* ViewController+Actions.swift */; };
+		18E82148275E74480032A406 /* ViewController+CheckConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E82147275E74480032A406 /* ViewController+CheckConnection.swift */; };
 		60C0218CF2908D8E64A0928E /* Pods_LoodosTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DF216F6BE63F27C4BC5351 /* Pods_LoodosTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,13 +53,23 @@
 		182069F9275A509600000833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182069FC275A509600000833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182069FE275A509600000833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18206A0C275A593300000833 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		18206A11275A799400000833 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		18206A13275A7B7600000833 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		18206A13275A7B7600000833 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		18206A15275A7EB800000833 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		18E8210A275B5AFF0032A406 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		18E82127275B95DA0032A406 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		18E8210A275B5AFF0032A406 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		18E82127275B95DA0032A406 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		18E82129275BE2140032A406 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18E8212B275BF4240032A406 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		18E8212E275E08CA0032A406 /* NetworkManager+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+JSON.swift"; sourceTree = "<group>"; };
+		18E82133275E12AB0032A406 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		18E82137275E34EA0032A406 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		18E82139275E3E8A0032A406 /* RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCValues.swift; sourceTree = "<group>"; };
+		18E8213D275E69FF0032A406 /* ViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Delegate.swift"; sourceTree = "<group>"; };
+		18E8213F275E6E4C0032A406 /* ViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		18E82141275E73100032A406 /* DetailViewController+SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+SetupUI.swift"; sourceTree = "<group>"; };
+		18E82143275E73300032A406 /* ViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		18E82145275E74090032A406 /* ViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Actions.swift"; sourceTree = "<group>"; };
+		18E82147275E74480032A406 /* ViewController+CheckConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CheckConnection.swift"; sourceTree = "<group>"; };
 		4605A70EDF367CB7D1B4BF3F /* Pods-LoodosTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosTask.debug.xcconfig"; path = "Target Support Files/Pods-LoodosTask/Pods-LoodosTask.debug.xcconfig"; sourceTree = "<group>"; };
 		BD3FAC1EF78148FD77EF1144 /* Pods-LoodosTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosTask.release.xcconfig"; path = "Target Support Files/Pods-LoodosTask/Pods-LoodosTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,7 +117,8 @@
 		182069EF275A509200000833 /* LoodosTask */ = {
 			isa = PBXGroup;
 			children = (
-				18E82129275BE2140032A406 /* GoogleService-Info.plist */,
+				18E82132275E12410032A406 /* Core */,
+				18E8212D275E08890032A406 /* Extensions */,
 				18206A10275A773D00000833 /* Network */,
 				18206A04275A525C00000833 /* Model */,
 				18206A05275A526200000833 /* ViewModel */,
@@ -108,6 +129,7 @@
 				182069F9275A509600000833 /* Assets.xcassets */,
 				182069FB275A509600000833 /* LaunchScreen.storyboard */,
 				182069FE275A509600000833 /* Info.plist */,
+				18E82129275BE2140032A406 /* GoogleService-Info.plist */,
 			);
 			path = LoodosTask;
 			sourceTree = "<group>";
@@ -123,8 +145,8 @@
 		18206A05275A526200000833 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				18206A13275A7B7600000833 /* MainVM.swift */,
-				18E82127275B95DA0032A406 /* DetailVM.swift */,
+				18206A13275A7B7600000833 /* MainViewModel.swift */,
+				18E82127275B95DA0032A406 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				182069F4275A509200000833 /* ViewController.swift */,
-				18E8210A275B5AFF0032A406 /* DetailVC.swift */,
+				18E8210A275B5AFF0032A406 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				182069F6275A509200000833 /* Main.storyboard */,
-				18206A0C275A593300000833 /* Splash.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,8 +172,57 @@
 			isa = PBXGroup;
 			children = (
 				18206A15275A7EB800000833 /* NetworkManager.swift */,
+				18E8212B275BF4240032A406 /* Response.swift */,
+				18E82137275E34EA0032A406 /* Connectivity.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		18E8212D275E08890032A406 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18E82149275E746A0032A406 /* NetworkManager */,
+				18E8214A275E74740032A406 /* ViewController */,
+				18E8214B275E74980032A406 /* DetailViewController */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18E82132275E12410032A406 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18E82133275E12AB0032A406 /* List.swift */,
+				18E82139275E3E8A0032A406 /* RCValues.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		18E82149275E746A0032A406 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				18E8212E275E08CA0032A406 /* NetworkManager+JSON.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		18E8214A275E74740032A406 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E8213D275E69FF0032A406 /* ViewController+Delegate.swift */,
+				18E8213F275E6E4C0032A406 /* ViewController+TableViewDataSource.swift */,
+				18E82143275E73300032A406 /* ViewController+TableViewDelegate.swift */,
+				18E82145275E74090032A406 /* ViewController+Actions.swift */,
+				18E82147275E74480032A406 /* ViewController+CheckConnection.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18E8214B275E74980032A406 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E82141275E73100032A406 /* DetailViewController+SetupUI.swift */,
+			);
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
 		69B04597C04E5A8986402053 /* Frameworks */ = {
@@ -251,7 +321,6 @@
 				182069FA275A509600000833 /* Assets.xcassets in Resources */,
 				18E8212A275BE2140032A406 /* GoogleService-Info.plist in Resources */,
 				182069F8275A509200000833 /* Main.storyboard in Resources */,
-				18206A0D275A593300000833 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,14 +373,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E8213A275E3E8A0032A406 /* RCValues.swift in Sources */,
 				182069F5275A509200000833 /* ViewController.swift in Sources */,
-				18206A14275A7B7600000833 /* MainVM.swift in Sources */,
+				18206A14275A7B7600000833 /* MainViewModel.swift in Sources */,
 				18206A12275A799400000833 /* Movie.swift in Sources */,
+				18E82146275E74090032A406 /* ViewController+Actions.swift in Sources */,
 				18206A16275A7EB800000833 /* NetworkManager.swift in Sources */,
-				18E8210B275B5AFF0032A406 /* DetailVC.swift in Sources */,
+				18E8212C275BF4240032A406 /* Response.swift in Sources */,
+				18E8210B275B5AFF0032A406 /* DetailViewController.swift in Sources */,
+				18E8213E275E69FF0032A406 /* ViewController+Delegate.swift in Sources */,
+				18E82144275E73300032A406 /* ViewController+TableViewDelegate.swift in Sources */,
 				182069F1275A509200000833 /* AppDelegate.swift in Sources */,
+				18E82140275E6E4C0032A406 /* ViewController+TableViewDataSource.swift in Sources */,
+				18E82138275E34EA0032A406 /* Connectivity.swift in Sources */,
 				182069F3275A509200000833 /* SceneDelegate.swift in Sources */,
-				18E82128275B95DA0032A406 /* DetailVM.swift in Sources */,
+				18E8212F275E08CA0032A406 /* NetworkManager+JSON.swift in Sources */,
+				18E82142275E73100032A406 /* DetailViewController+SetupUI.swift in Sources */,
+				18E82148275E74480032A406 /* ViewController+CheckConnection.swift in Sources */,
+				18E82134275E12AB0032A406 /* List.swift in Sources */,
+				18E82128275B95DA0032A406 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -54,24 +54,51 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-l0-dIW" userLabel="Splash View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAn-4N-wI0">
+                                        <rect key="frame" x="157" y="428" width="100" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Dff-hX-uGZ"/>
+                                            <constraint firstAttribute="height" constant="40" id="jQw-da-Xas"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="lAn-4N-wI0" firstAttribute="centerY" secondItem="c7j-l0-dIW" secondAttribute="centerY" id="Vpw-TP-c03"/>
+                                    <constraint firstItem="lAn-4N-wI0" firstAttribute="centerX" secondItem="c7j-l0-dIW" secondAttribute="centerX" id="mop-hf-20s"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Np9-HX-TFg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="1NY-so-fUo"/>
+                            <constraint firstItem="c7j-l0-dIW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4bR-GP-cPd"/>
+                            <constraint firstAttribute="bottom" secondItem="c7j-l0-dIW" secondAttribute="bottom" id="6ib-i1-dxw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Np9-HX-TFg" secondAttribute="trailing" constant="139" id="Hys-bJ-o20"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wIP-Yn-otu" secondAttribute="bottom" id="Q2q-Au-ukT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="voL-gc-dJt" secondAttribute="trailing" constant="70" id="UO4-TN-d02"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c7j-l0-dIW" secondAttribute="trailing" id="WGI-GX-tsl"/>
                             <constraint firstItem="voL-gc-dJt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Xfr-lC-yfV"/>
                             <constraint firstItem="Np9-HX-TFg" firstAttribute="top" secondItem="voL-gc-dJt" secondAttribute="bottom" constant="32" id="fIH-PT-JuV"/>
                             <constraint firstItem="wIP-Yn-otu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kES-PE-zSN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wIP-Yn-otu" secondAttribute="trailing" id="lKE-a3-7Rs"/>
                             <constraint firstItem="wIP-Yn-otu" firstAttribute="top" secondItem="Np9-HX-TFg" secondAttribute="bottom" constant="50" id="mpR-8r-3nx"/>
+                            <constraint firstItem="c7j-l0-dIW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n1u-bc-S0S"/>
                             <constraint firstItem="voL-gc-dJt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="weO-F3-jnr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wSc-yS-gHW"/>
                     <connections>
+                        <outlet property="loginText" destination="lAn-4N-wI0" id="5Fc-Ih-Tk3"/>
+                        <outlet property="splashView" destination="c7j-l0-dIW" id="VTu-Hi-ddt"/>
                         <outlet property="tableView" destination="wIP-Yn-otu" id="uJH-dg-MoN"/>
                         <outlet property="txtSearch" destination="voL-gc-dJt" id="1kZ-AL-Ane"/>
                     </connections>
@@ -169,6 +196,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
