@@ -13,7 +13,7 @@ pod 'Alamofire'
 pod 'Firebase'
 ```
 
-Finaly
+Finally
 
 ```bash
 pod install
